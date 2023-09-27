@@ -27,25 +27,11 @@ class OntologyLookup
   end
 
   def display_ontology_details(data)
-    puts "\n<Data: #{data}>\n\n"
-
     puts "\n<Ontology Result Data>\n"
-    puts "Ontology Title: #{data['config']['title']}"
-    puts "Ontology Description: #{data['config']['description']}"
-    puts "Number of Terms: #{data['numberOfTerms']}"
-    puts "Current Status: #{data['status']}"
+    puts "Ontology Title: #{data['config']['title'] || 'N/A'}"
+    puts "Ontology Description: #{data['config']['description'] || 'N/A'}"
+    puts "Number of Terms: #{data['numberOfTerms'] || 'N/A'}"
+    puts "Current Status: #{data['status'] || 'N/A'}"
     puts "\n"
   end
 end
-
-if ARGV.empty?
-  puts 'Usage: ruby ontology_lookup.rb <ontology_id>'
-  exit 1
-end
-
-# puts ARGV
-# puts ENV['ONTOLGY_API_BASE_URL']
-
-ontology_id = ARGV[0]
-ontology_lookup = OntologyLookup.new(ontology_id)
-ontology_lookup.fetch_ontology_details

@@ -17,4 +17,4 @@ RUN bundle install
 COPY . .
 
 # Entrypoints to run ruby script
-ENTRYPOINT ["ruby", "ontology_lookup.rb"]
+ENTRYPOINT ["ruby", "start_ontology_lookup.rb"]
