@@ -23,7 +23,7 @@
     ```bash
     docker run -it ontology-lookup <ontology_id>
    
-4. **Example <ontology_ids> for test:**
+5. **Example <ontology_ids> for test:**
 
     ```bash
     agro
