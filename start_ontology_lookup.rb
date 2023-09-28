@@ -1,7 +1,7 @@
 require_relative './ontology_services/ontology_lookup'
 
 if ARGV.empty?
-  puts 'Usage: ruby ontology_lookup.rb <ontology_id>'
+  puts 'Usage: docker run -it ontology-lookup <ontology_id>'
   exit 1
 end
 
