@@ -2,7 +2,7 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/usmansohee/ontology_testing.git
+   git clone https://github.com/usmansohee/vib_ontology_lookup_test.git
 
 2. **Navigate to the Project Directory**:
 
